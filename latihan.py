@@ -424,3 +424,9 @@
 # for x in minuman:
 #     for i in makanan:
 #         print(f'paket: {x,i}')
+
+
+buah = ["apel", 'mangga']
+
+for i in buah:
+    print('ini adalah nama2 buah: ', i)
