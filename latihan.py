@@ -431,5 +431,12 @@
 # for i in buah:
 #     print('ini adalah nama2 buah: ', i)
 
-for i in range(1,5):
-    print(i)
+# for i in range(1,5):
+#     print(i)
+
+makanan = ['indomie', 'roti bakar']
+minuman = ['air putih']
+
+for i in makanan:
+    for x in minuman:
+        print('paket: ', i ,'+', x)
