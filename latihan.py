@@ -434,9 +434,26 @@
 # for i in range(1,5):
 #     print(i)
 
-makanan = ['indomie', 'roti bakar']
-minuman = ['air putih']
+# makanan = ['indomie', 'roti bakar']
+# minuman = ['air putih']
 
-for i in makanan:
-    for x in minuman:
-        print('paket: ', i ,'+', x)
+# for i in makanan:
+#     for x in minuman:
+#         print('paket: ', i ,'+', x)
+
+
+
+while True:
+    try:
+        item = int(input('masukkan jumlah item: '))
+        if item == 0:
+            print('toko ditutup')
+            break
+        elif item < 0:
+            print('jumlah tidak butuh negatif')
+        elif item > 100:
+            print('maksimal 100 item')
+        else:
+            print(f'transaksi {item} berhasil')
+    except ValueError:
+        print('input harus berupa angka')
