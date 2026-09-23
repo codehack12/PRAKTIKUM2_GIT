@@ -443,17 +443,117 @@
 
 
 
+
+# while True:
+#     try:
+#         item = int(input('masukkan jumlah item: '))
+#         if item == 0:
+#             print('toko ditutup')
+#             break
+#         elif item < 0:
+#             print('jumlah tidak butuh negatif')
+#         elif item > 100:
+#             print('maksimal 100 item')
+#         else:
+#             print(f'transaksi {item} berhasil')
+#     except ValueError:
+#         print('input harus berupa angka')
+
+# total_pendapatan = 0
+# jumlah_pengunjung = 0
+
+# print("=== SISTEM KASIR FUNLAND ===")
+
+# while True:
+#     input_user = input("\nMasukkan umur pengunjung (atau 'selesai'): ")
+    
+#     # Cek kondisi berhenti
+#     if input_user.lower() == 'selesai':
+#         break
+        
+#     try:
+#         umur = int(input_user)
+#     except ValueError:
+#         print("Input tidak valid! Masukkan angka atau 'selesai'.")
+#         continue
+        
+#     if umur < 0:
+#         print("Umur tidak valid!")
+#         continue
+        
+#     # Penentuan harga
+#     if umur <= 3:
+#         harga = 0
+#         kategori = "Balita (Gratis)"
+#     elif umur <= 10:
+#         harga = 35000
+#         kategori = "Anak-anak"
+#     else:
+#         harga = 70000
+#         kategori = "Dewasa"
+        
+#     total_pendapatan += harga
+#     jumlah_pengunjung += 1
+#     print(f"Kategori: {kategori} | Harga: Rp {harga:,}")
+
+# print("\n===============================")
+# print(f"Total Pengunjung : {jumlah_pengunjung} orang")
+# print(f"Total Pendapatan : Rp {total_pendapatan:,}")
+# print("===============================")
+            
+
+
+# while True:
+#     try:
+#         jumlah = int(input('masukkan jumlah item: '))
+#     except ValueError:
+#         print('input hatus berupa angka')
+
+#     if jumlah < 0:
+#         print('input tidak boleh negatif!')
+#         continue
+#     if jumlah > 100:
+#         print('maksimal 100 item per transaksi!')
+#         continue
+#     if jumlah == 0:
+#         print('toko ditutup, transaksi selesai!')
+#         break
+
+#     print(f'transaksi {jumlah} item berhasil!!')
+    
+# while True:
+#     try:
+#         angka = int(input('masukkan angka: '))
+#     except ValueError:
+#         print('input harus angka')
+    
+
+
+print('\n---setup denah bioskop---\n')
+
+
 while True:
     try:
-        item = int(input('masukkan jumlah item: '))
-        if item == 0:
-            print('toko ditutup')
-            break
-        elif item < 0:
-            print('jumlah tidak butuh negatif')
-        elif item > 100:
-            print('maksimal 100 item')
-        else:
-            print(f'transaksi {item} berhasil')
+        jumlah_baris = int(input('masukkan jumlah baris: '))
+        if jumlah_baris <= 0:
+            print('jumlah baris harus lebih dari 0!')
+            continue
+        jumlah_kursi = int(input('masukkan jumlah kursi per baris: '))
+        if jumlah_kursi <= 0:
+            print('jumlah kursi harus lebih dari 0!')
+            continue
+        break
     except ValueError:
-        print('input harus berupa angka')
+            print('input harus berupa angka')
+
+print('\n=== Daftar kursi tersedia ===\n')             
+for baris in range(1, jumlah_baris + 1):
+    for kursi in range(1, jumlah_kursi + 1):
+        if kursi == 13:
+            continue
+        if baris == 1 and kursi % 2 == 0:
+            continue
+
+        print(f'baris {baris} - kursi {kursi}')
+            
+            
