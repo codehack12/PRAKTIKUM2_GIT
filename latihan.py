@@ -634,29 +634,34 @@
 # print('\n===SEMUA KURSI TERISI===\n')
 # print(f'total pendapatan perjalanan ini = {pendapatan_total}')
 
-total = 0
+# total = 0
 
-while True:
-    harga = int(input("Masukkan harga barang (ketik 0 untuk selesai): "))
+# while True:
+#     harga = int(input("Masukkan harga barang (ketik 0 untuk selesai): "))
 
-    # 1. Kondisi untuk menghentikan loop
-    if harga == 0:
-        break
+#     # 1. Kondisi untuk menghentikan loop
+#     if harga == 0:
+#         break
 
-    # 2. Filter barang dengan harga kurang dari 100.000 (diabaikan)
-    if harga < 100000:
-        print("Barang di bawah Rp100.000 diabaikan.\n")
-        continue
+#     # 2. Filter barang dengan harga kurang dari 100.000 (diabaikan)
+#     if harga < 100000:
+#         print("Barang di bawah Rp100.000 diabaikan.\n")
+#         continue
 
-    # 3. Akumulasi total belanjaan
-    total += harga
-    print(f"Subtotal saat ini: Rp{total:,}\n")
+#     # 3. Akumulasi total belanjaan
+#     total += harga
+#     print(f"Subtotal saat ini: Rp{total:,}\n")
 
-# 4. Pengecekan diskon setelah semua barang selesai diinput
-if total >= 100000:
-    diskon = total * 0.10
-    total_akhir = total - diskon
-    print(f"Selamat! Anda mendapatkan diskon 10% (Rp{diskon:,.0f}).")
-    print(f"Total yang harus dibayar: Rp{total_akhir:,.0f}")
-else:
-    print(f"Total yang harus dibayar: Rp{total:,}")
+# # 4. Pengecekan diskon setelah semua barang selesai diinput
+# if total >= 100000:
+#     diskon = total * 0.10
+#     total_akhir = total - diskon
+#     print(f"Selamat! Anda mendapatkan diskon 10% (Rp{diskon:,.0f}).")
+#     print(f"Total yang harus dibayar: Rp{total_akhir:,.0f}")
+# else:
+#     print(f"Total yang harus dibayar: Rp{total:,}")
+
+
+for i in range(1,31):
+    if i % 3 == 0 and i % 5 == 0:
+        print(f'angka [{i}]: kelipatan angka 3 dan kelipatan angka 5')
