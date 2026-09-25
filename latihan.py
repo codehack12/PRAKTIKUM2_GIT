@@ -529,31 +529,134 @@
     
 
 
-print('\n---setup denah bioskop---\n')
+# print('\n---setup denah bioskop---\n')
 
+
+# while True:
+#     try:
+#         jumlah_baris = int(input('masukkan jumlah baris: '))
+#         if jumlah_baris <= 0:
+#             print('jumlah baris harus lebih dari 0!')
+#             continue
+#         jumlah_kursi = int(input('masukkan jumlah kursi per baris: '))
+#         if jumlah_kursi <= 0:
+#             print('jumlah kursi harus lebih dari 0!')
+#             continue
+#         break
+#     except ValueError:
+#             print('input harus berupa angka')
+
+# print('\n=== Daftar kursi tersedia ===\n')             
+# for baris in range(1, jumlah_baris + 1):
+#     for kursi in range(1, jumlah_kursi + 1):
+#         if kursi == 13:
+#             continue
+#         if baris == 1 and kursi % 2 == 0:
+#             continue
+
+#         print(f'baris {baris} - kursi {kursi}')
+
+
+
+# print('\n---SETUP DENAH BIOSKOP NONTON YUK---\n')
+# while True:
+#     try:
+#         jumlah_baris = int(input('masukkan jumlah baris: '))
+#         if jumlah_baris < 0:
+#             print('jumlah baris harus lebih dari 0')
+#             continue
+#         jumlah_kursi = int(input('masukkan jumlah kursi: '))
+#         if jumlah_kursi < 0:
+#             print('jumlah kursi harus lebih dari 0')
+#             continue
+#         break
+#     except ValueError:
+#         print('input harus berupa angka')
+
+# print('\n===DAFTAR KURSI TERSEDIA===\n')
+# for baris in range(1, jumlah_baris + 1):
+#     for kursi in range(1, jumlah_kursi + 1):
+
+#         if kursi == 13:
+#             continue
+#         if baris == 1 and kursi % 2 == 0:
+#             continue
+
+#         print(f'baris {baris} - kursi {kursi}')
+
+
+# while True:
+#     try:
+#         kursi = int(input('masukkan jumlah maksimal kursi: '))
+#         if kursi < 0:
+#             print('jumlah harus lebih dari 0 ')
+#             continue
+#         break
+#     except ValueError:
+#         print('input harus berupa angka')
+
+# sisa_kursi = kursi 
+# pendapatan_total = 0
+
+# print('\n===SISTEM RESERVASI PO BUS DIMULAI===\n')
+
+# while sisa_kursi > 0:
+#     print(f'sisa kursi {sisa_kursi}')
+
+#     try:
+#         umur = int(input('masukkan umur penumpang: '))
+#     except ValueError:
+#         print('input harus berupa angka')
+#         continue
+
+#     if umur < 0:
+#         print('umur tidak valid')
+#         continue
+
+#     if umur <= 5:
+#         kategori = 'Balita - Tiket Gratis (Rp 0)'
+#         harga = 0
+    
+#     elif umur <= 12:
+#         kategori = "Anak - Harga: Rp 50.000"
+#         harga = 50000
+    
+#     else:
+#         kategori = "Dewasa - Harga: Rp 100.000"
+#         harga = 100000
+    
+        
+#     print(f'kategori: {kategori}')
+
+#     sisa_kursi -= 1
+#     pendapatan_total += harga
+
+# print('\n===SEMUA KURSI TERISI===\n')
+# print(f'total pendapatan perjalanan ini = {pendapatan_total}')
+
+total = 0
 
 while True:
-    try:
-        jumlah_baris = int(input('masukkan jumlah baris: '))
-        if jumlah_baris <= 0:
-            print('jumlah baris harus lebih dari 0!')
-            continue
-        jumlah_kursi = int(input('masukkan jumlah kursi per baris: '))
-        if jumlah_kursi <= 0:
-            print('jumlah kursi harus lebih dari 0!')
-            continue
+    harga = int(input("Masukkan harga barang (ketik 0 untuk selesai): "))
+
+    # 1. Kondisi untuk menghentikan loop
+    if harga == 0:
         break
-    except ValueError:
-            print('input harus berupa angka')
 
-print('\n=== Daftar kursi tersedia ===\n')             
-for baris in range(1, jumlah_baris + 1):
-    for kursi in range(1, jumlah_kursi + 1):
-        if kursi == 13:
-            continue
-        if baris == 1 and kursi % 2 == 0:
-            continue
+    # 2. Filter barang dengan harga kurang dari 100.000 (diabaikan)
+    if harga < 100000:
+        print("Barang di bawah Rp100.000 diabaikan.\n")
+        continue
 
-        print(f'baris {baris} - kursi {kursi}')
-            
-            
+    # 3. Akumulasi total belanjaan
+    total += harga
+    print(f"Subtotal saat ini: Rp{total:,}\n")
+
+# 4. Pengecekan diskon setelah semua barang selesai diinput
+if total >= 100000:
+    diskon = total * 0.10
+    total_akhir = total - diskon
+    print(f"Selamat! Anda mendapatkan diskon 10% (Rp{diskon:,.0f}).")
+    print(f"Total yang harus dibayar: Rp{total_akhir:,.0f}")
+else:
+    print(f"Total yang harus dibayar: Rp{total:,}")
