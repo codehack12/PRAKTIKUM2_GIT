@@ -662,6 +662,84 @@
 #     print(f"Total yang harus dibayar: Rp{total:,}")
 
 
-for i in range(1,31):
-    if i % 3 == 0 and i % 5 == 0:
-        print(f'angka [{i}]: kelipatan angka 3 dan kelipatan angka 5')
+# for i in range(1,31):
+#     if i % 3 == 0 and i % 5 == 0:
+#         print(f'angka [{i}]: kelipatan angka 3 dan kelipatan angka 5')
+#     elif i % 2 == 0:
+#         print(f'angka [{i}]: genap')
+#     else:
+#         print(f'angka [{i}]: ganjil')
+
+
+# kode = 123456
+# percobaan = 3
+
+# print('\n===== SELAMAT DATANG ======\n')
+# while True:
+#     try:
+#         pin = int(input('masukkan pin anda: '))
+
+#         if pin == kode:
+#             print('Selamat datang, akses anda diterima')
+#             break
+
+#         else:
+#             percobaan -= 1
+#             if percobaan > 0:
+#                 print(f'kode salah, sisa percobaan [{percobaan}]')
+#                 continue
+#             elif percobaan == 0:
+#                 print('KARTU ATM ANDA TERBLOKIR')
+#                 break
+
+#     except ValueError:
+#         print('\npin harus berupa angka\n')
+
+
+# nilai_siswa = [45, 78, 60, 88, 30, 95, 52, 70]
+# kkm = 60
+
+# siswa_lulus = 0
+# siswa_tidak_lulus = 0
+# nilai_lulus = 0
+
+# for angka in nilai_siswa:
+#     if angka >= kkm:
+#         siswa_lulus += 1
+#         nilai_lulus += angka
+
+#     else:
+#         siswa_tidak_lulus += 1
+
+# if siswa_lulus > 0:
+#     nilai_rata_rata = nilai_lulus / siswa_lulus
+# else:
+#     nilai_rata_rata = 0
+
+
+# print(f'siswa yang lulus: {siswa_lulus}')
+# print(f'siswa yang tidak lulus: {siswa_tidak_lulus}')
+# print(f'nilai rata-rata: {nilai_rata_rata}')
+
+umur_pendaftar = [14, 22, 17, 35, 10, 50]
+kategori_anak = 0
+kategori_remaja = 0
+kategori_dewasa = 0
+
+for umur in umur_pendaftar:
+    if umur < 12:
+        kategori_anak += 1
+        print('kategori = anak-anak, belum boleh daftar')
+
+    elif  umur <= 17 and umur >= 12:
+        kategori_remaja += 1
+        print('kategori = remaja, izin orang tua')
+    else:
+        kategori_dewasa += 1
+        print('kategori = dewasa, diterima')
+
+print('\n==== daftar kategori pengunjung ====\n')
+
+print(f'jumlah pendaftar kategori anak-anak = {kategori_anak}')
+print(f'jumlah pendaftar kategori remaja = {kategori_remaja}')
+print(f'jumlah pendaftar kategori dewasa = {kategori_dewasa}')
