@@ -721,25 +721,64 @@
 # print(f'siswa yang tidak lulus: {siswa_tidak_lulus}')
 # print(f'nilai rata-rata: {nilai_rata_rata}')
 
-umur_pendaftar = [14, 22, 17, 35, 10, 50]
-kategori_anak = 0
-kategori_remaja = 0
-kategori_dewasa = 0
+# umur_pendaftar = [14, 22, 17, 35, 10, 50]
+# kategori_anak = 0
+# kategori_remaja = 0
+# kategori_dewasa = 0
 
-for umur in umur_pendaftar:
-    if umur < 12:
-        kategori_anak += 1
-        print('kategori = anak-anak, belum boleh daftar')
+# for umur in umur_pendaftar:
+#     if umur < 12:
+#         kategori_anak += 1
+#         print('kategori = anak-anak, belum boleh daftar')
 
-    elif  umur <= 17 and umur >= 12:
-        kategori_remaja += 1
-        print('kategori = remaja, izin orang tua')
-    else:
-        kategori_dewasa += 1
-        print('kategori = dewasa, diterima')
+#     elif  umur <= 17 and umur >= 12:
+#         kategori_remaja += 1
+#         print('kategori = remaja, izin orang tua')
+#     else:
+#         kategori_dewasa += 1
+#         print('kategori = dewasa, diterima')
 
-print('\n==== daftar kategori pengunjung ====\n')
+# print('\n==== daftar kategori pengunjung ====\n')
 
-print(f'jumlah pendaftar kategori anak-anak = {kategori_anak}')
-print(f'jumlah pendaftar kategori remaja = {kategori_remaja}')
-print(f'jumlah pendaftar kategori dewasa = {kategori_dewasa}')
+# print(f'jumlah pendaftar kategori anak-anak = {kategori_anak}')
+# print(f'jumlah pendaftar kategori remaja = {kategori_remaja}')
+# print(f'jumlah pendaftar kategori dewasa = {kategori_dewasa}')
+
+
+
+# for i in range(1,10,2):
+#     if i == 3:
+#         print('angka 2 ditemukan')
+#         break
+#     print(i)
+
+total_pengunjung = 0
+total_harga = 0
+
+while True:
+    try:
+        umur = int(input('masukkan umur anda: '))
+
+        if umur < 12:
+            harga = 25000
+        elif umur <= 60:
+            harga = 50000
+        else:
+            harga = 35000
+
+        print('harga tiket: ', harga)
+
+        total_harga += harga
+        total_pengunjung += 1
+
+        pengunjung = input('apakah masih ada pengunjung lain (ya/tidak): ').strip().lower()
+
+        if pengunjung == 'tidak':
+            break 
+
+    except ValueError:
+        print('input harus berupa angka!!')
+
+print('\n=== rekapitulasi===\n')
+print(f'total pengunjung ada: {total_pengunjung}')
+print(f'total bayar: {total_harga}')
