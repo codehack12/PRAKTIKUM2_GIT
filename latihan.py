@@ -752,33 +752,82 @@
 #         break
 #     print(i)
 
-total_pengunjung = 0
-total_harga = 0
+# total_pengunjung = 0
+# total_harga = 0
 
-while True:
-    try:
-        umur = int(input('masukkan umur anda: '))
+# while True:
+#     try:
+#         umur = int(input('masukkan umur anda: '))
 
-        if umur < 12:
-            harga = 25000
-        elif umur <= 60:
-            harga = 50000
-        else:
-            harga = 35000
+#         if umur < 12:
+#             harga = 25000
+#         elif umur <= 60:
+#             harga = 50000
+#         else:
+#             harga = 35000
 
-        print('harga tiket: ', harga)
+#         print('harga tiket: ', harga)
 
-        total_harga += harga
-        total_pengunjung += 1
+#         total_harga += harga
+#         total_pengunjung += 1
 
-        pengunjung = input('apakah masih ada pengunjung lain (ya/tidak): ').strip().lower()
+#         pengunjung = input('apakah masih ada pengunjung lain (ya/tidak): ').strip().lower()
 
-        if pengunjung == 'tidak':
-            break 
+#         if pengunjung == 'tidak':
+#             break 
 
-    except ValueError:
-        print('input harus berupa angka!!')
+#     except ValueError:
+#         print('input harus berupa angka!!')
 
-print('\n=== rekapitulasi===\n')
-print(f'total pengunjung ada: {total_pengunjung}')
-print(f'total bayar: {total_harga}')
+# print('\n=== rekapitulasi===\n')
+# print(f'total pengunjung ada: {total_pengunjung}')
+# print(f'total bayar: {total_harga}')
+
+
+# def halo():
+#     print('hello world')
+
+# halo()
+
+
+# def kuadrat(a, b):
+#     return a ** b
+
+# hasil = kuadrat(5, 2)
+
+# print(hasil)
+
+# def nilai(a, b):
+
+#     return  a * b
+
+# hasil = nilai(5, 3)
+
+# print(hasil)
+
+
+# def greet(sapa_pengguna = 'tamu'):
+#     print(f'halo {sapa_pengguna}')
+
+# greet()
+# greet('afdal')
+
+# def cetak_angka(*args):
+#     total = sum(args)  # Akan mencetak dalam bentuk tupel
+#     return total
+
+# # Cara memanggilnya dengan banyak angka bebas:
+# cetak_angka(1, 2, 3, 4, 5)
+
+# def sapa_peseta(nama = 'pengunjung'):
+#     print(f'selamat datang {nama}')
+
+# sapa_peseta()
+# sapa_peseta('afdal')
+
+# def total_belanja(*args):
+#     total = sum(args)
+#     return total
+
+# belanja = total_belanja(10000, 25000, 5000)
+# print(f'total belanja anda adalah: {belanja}')
