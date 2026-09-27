@@ -872,3 +872,119 @@
 # namaku = ['afdal']
 # nama_peserta(nama)
 # nama_peserta(namaku)
+
+
+#fungsi dengan return
+
+# def keliling(sisi):
+#     hasil = 4 * sisi
+#     return hasil
+
+# print(keliling(4))
+
+# def keliling(angka):
+#     return 4*angka
+
+# s = 10 + keliling(2)
+
+# print(s)
+
+# def penyambutan(nama):
+#     list_tamu = nama.copy()
+#     for i in list_tamu:
+#         print(f'selamat datang: {i}')
+
+# nama_tamu = ['afdal', 'arya']
+
+# print(penyambutan(nama_tamu))
+
+
+# def operasi_matematika(angka1, angka2):
+#     kali = angka1 * angka2
+#     tambah = angka1 + angka2
+#     kurang = angka1 - angka2
+#     return kali,tambah,kurang
+
+# print(operasi_matematika(1,3))
+
+
+# def nama(sifat = "orang baek", umur = 10):
+#     print(f'berapa umur mu: {umur}, apa sifat kamu: {sifat}')
+
+# afdal = nama(sifat = 'bad', umur = 21)
+
+# print(afdal)
+#print(f"{"-"*40:^40}")
+
+# def perkenalan(nama, umur):
+#     return f'nama saya: {nama}, umur saya: {umur}'
+
+# print(perkenalan('afdal', 17))
+
+# def kali(angka):
+
+
+#def nama_fungsi(parameter):
+    #badan fungsi
+
+
+# nama_fungsi()
+
+# def harga(kopi, jumlah):
+#     tanpa_diskon = (kopi*jumlah)
+#     setelah_diskon = tanpa_diskon - (tanpa_diskon*0.1)
+#     return setelah_diskon
+
+# print(harga(25000, 2))
+
+# def penjumlahan(*angka):
+#     rata2 = sum(angka)/len(angka)
+#     return rata2
+
+# print(f'rata-ratanya adalah: {penjumlahan(1,2,3,4,5)}')
+
+
+
+# def angka(*nomor):
+#     jumlah = 0
+#     for i in nomor:
+#         jumlah += i
+#     return jumlah
+
+# print(angka(1,2,3,4,5))
+
+# def angka(*args):
+#     jumlahkan = sum(args)
+#     rata2 = jumlahkan/len(args)
+#     return jumlahkan
+
+# print(angka(1,2,3,4,5))
+
+# def cetak_id_card(nama_lengkap, **info_tambahan):
+#     print(f"=== KARTU IDENTITAS ===")
+#     print(f"Nama: {nama_lengkap}")
+    
+#     # Mencetak semua info tambahan yang dikirim (jika ada)
+#     for label, nilai in info_tambahan.items():
+#         # Mengubah huruf pertama label menjadi kapital agar rapi
+#         print(f"{label.capitalize()}: {nilai}")
+        
+#     print("========================\n")
+
+# # ==========================================
+# # SIMULASI PENGGUNAAN
+# # ==========================================
+
+# # 1. Karyawan A hanya punya data dasar dan nomor HP
+# cetak_id_card("Budi Santoso", telepon="08123456789")
+
+# # 2. Karyawan B punya data tambahan divisi, hobi, dan status
+# cetak_id_card("Siti Rahma", divisi="Marketing", hobi="Membaca", status="Aktif")
+
+def cetak_laporan_nilai(nama, **nilai):
+    print('\n=====laporan nilai ujian====\n')
+    print(f'nama siswa: {nama}')
+    for kunci, label in nilai.items():
+        print(kunci, label)
+
+cetak_laporan_nilai(f"afdal ginaya zulham", matematika = 90, algopro = 90)
