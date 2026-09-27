@@ -831,3 +831,44 @@
 
 # belanja = total_belanja(10000, 25000, 5000)
 # print(f'total belanja anda adalah: {belanja}')
+
+# def nama_usia(a, b):
+#     print(f'nama saya {a} dan usia saya {b}')
+
+# nama_usia(20, "afdal")
+
+
+# def identitas( nama = 'afdal ginaya', usia = 20):
+#     print(f'nama saya {nama}, dan usia saya {usia}, kamu bisa memanggil saya {nama}')
+
+# identitas()
+
+
+# def hitung_harga_akhir(harga_akhir, diskon): 
+
+#     proses = harga_akhir - (harga_akhir * diskon)
+#     return proses
+
+
+# print(hitung_harga_akhir(100000, 0.2)) 
+
+# def bagi_angka(a, b):
+#     proses = a / b
+#     return proses
+
+# print(bagi_angka(10, 2))
+
+# def hello():
+#     print('halo')
+
+# hello()
+
+# def nama_peserta(peserta):
+#     list_peserta = peserta.copy()
+#     for i in list_peserta:
+#         print(f'halo peserta: {i}')
+
+# nama = ['afdal', 'arya', 'faiz']
+# namaku = ['afdal']
+# nama_peserta(nama)
+# nama_peserta(namaku)
