@@ -1023,12 +1023,34 @@
 # else:
 #     print('orang baek')
 
-passing_score = 80
-def check_pass(score):
-    if score >= passing_score:
-        print('anda lulus')
-    else:
-        print('anda tidak lulus')
+# passing_score = 80
+# def check_pass(score):
+#     if score >= passing_score:
+#         print('anda lulus')
+#     else:
+#         print('anda tidak lulus')
 
-check_pass(55)
+# check_pass(55)
+while True: 
+    try:
+        umur = int(input('masukkan umur: '))
+        if umur > 12:
+            kategori = 'remaja'
+        else:
+            kategori = 'anak2'
 
+        print(f'umur kamu: {umur}')
+        print(f'kamu dikategorikan: {kategori}')
+
+        lanjut = input('apakah ingin lanjut (ya/tidak: )').strip()
+        if lanjut == 'ya':
+            continue
+        elif lanjut == 'tidak':
+            break
+
+        
+        
+    except ValueError:
+        print('input harus berupa angka')
+
+print('\n====terima kasih telah berkunjung====\n')
