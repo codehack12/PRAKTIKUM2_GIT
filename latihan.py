@@ -981,10 +981,54 @@
 # # 2. Karyawan B punya data tambahan divisi, hobi, dan status
 # cetak_id_card("Siti Rahma", divisi="Marketing", hobi="Membaca", status="Aktif")
 
-def cetak_laporan_nilai(nama, **nilai):
-    print('\n=====laporan nilai ujian====\n')
-    print(f'nama siswa: {nama}')
-    for kunci, label in nilai.items():
-        print(kunci, label)
+# def cetak_laporan_nilai(nama, **nilai):
+#     print('\n=====laporan nilai ujian====\n')
+#     print(f'nama siswa: {nama}')
+#     for kunci, label in nilai.items():
+#         print(kunci, label)
 
-cetak_laporan_nilai(f"afdal ginaya zulham", matematika = 90, algopro = 90)
+# cetak_laporan_nilai(f"afdal ginaya zulham", matematika = 90, algopro = 90)
+
+
+# for i in range(1,101):
+#     print('fathur ganteng')
+
+# while True:
+#     try:
+#         nama = str(input('masukkan nama: '))
+
+#         if nama == 'afdalginaya':
+#             print('ganteng')
+#             break
+#         elif nama == 'fathur':
+#             print('rich')
+#             continue
+
+#     except ValueError:
+#         print('input tidak boleh angka')
+
+# def nama(orang='fathur'):
+#     nama_saya = print(f'nama saya: {orang}')
+#     return nama_saya
+    
+
+# nama('afdal')
+
+#function = mengembalikan nilai. prosedur = tidak mengembalikan nilai 
+
+# admin_judol = 'ibas'
+# nama = input('masukkan nama: ')
+# if nama == admin_judol:
+#     print('beliau sangat hebat')
+# else:
+#     print('orang baek')
+
+passing_score = 80
+def check_pass(score):
+    if score >= passing_score:
+        print('anda lulus')
+    else:
+        print('anda tidak lulus')
+
+check_pass(55)
+
