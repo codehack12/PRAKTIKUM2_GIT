@@ -1266,9 +1266,53 @@
 # kabar = word.upper()
 # print(kabar)
 
-nama = 'afdal'
-ganti = nama.replace('a', 'i')
-print(ganti)
+# nama = 'afdal'
+# ganti = nama.replace('a', 'i')
+# print(ganti)
 
-hitung = nama.count('a')
-print(hitung)
+# hitung = nama.count('a')
+# print(hitung)
+
+# nim = input('masukkan nim: ')
+# hitung = len(nim)
+# if hitung > 10:
+#     print('nim tidak valid')
+# elif hitung == 10:
+#     awal = nim[0]
+#     if awal == 'H':
+#         print('mipa')
+#     elif awal == 'E':
+#         print('fisp')
+#     elif awal == 'B':
+#         print('hukum')
+
+#stringname(start index, end index)
+
+
+
+# nim = input('masukkan nim: ')
+# angka = nim[4:6]
+# print(f'tahun angkatan: {angka}')
+
+# namaBarang = input('data scanner: ')
+# cari = namaBarang.find('RP')
+# print(f'harga (RP) mulai terdeteksi di indeks ke-{cari}')
+
+while True:
+
+    password = input('masukkan pass: ')
+    spass = password.count(" ")
+
+    if len(password) == 8 and spass == 0:
+        print('password valid dan berhasil')
+    if spass > 0:
+        print('pass tidak valid karena tidak boleh ada spasi')
+    if len(password) < 8 or len(password) > 8:
+        print('pass tidak valid karena tidak pas delapan karakter')
+
+
+
+
+
+
+
