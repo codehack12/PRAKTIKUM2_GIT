@@ -1266,3 +1266,9 @@
 # kabar = word.upper()
 # print(kabar)
 
+nama = 'afdal'
+ganti = nama.replace('a', 'i')
+print(ganti)
+
+hitung = nama.count('a')
+print(hitung)
