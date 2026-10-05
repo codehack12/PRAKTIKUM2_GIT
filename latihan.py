@@ -1031,26 +1031,238 @@
 #         print('anda tidak lulus')
 
 # check_pass(55)
-while True: 
-    try:
-        umur = int(input('masukkan umur: '))
-        if umur > 12:
-            kategori = 'remaja'
-        else:
-            kategori = 'anak2'
+# while True: 
+#     try:
+#         umur = int(input('masukkan umur: '))
+#         if umur > 12:
+#             kategori = 'remaja'
+#         else:
+#             kategori = 'anak2'
 
-        print(f'umur kamu: {umur}')
-        print(f'kamu dikategorikan: {kategori}')
+#         print(f'umur kamu: {umur}')
+#         print(f'kamu dikategorikan: {kategori}')
 
-        lanjut = input('apakah ingin lanjut (ya/tidak: )').strip()
-        if lanjut == 'ya':
-            continue
-        elif lanjut == 'tidak':
-            break
+#         lanjut = input('apakah ingin lanjut (ya/tidak): ').strip()
+#         if lanjut == 'ya':
+#             continue
+#         elif lanjut == 'tidak':
+#             break
 
         
         
-    except ValueError:
-        print('input harus berupa angka')
+#     except ValueError:
+#         print('input harus berupa angka')
 
-print('\n====terima kasih telah berkunjung====\n')
+# print('\n====terima kasih telah berkunjung====\n')
+
+# lambda = itu setara dengan def tetapi dalam penggunaannya dia ditempatkan di dalam variabel
+
+# tambah = lambda a, b: a * b
+# print(tambah(1, 2))
+
+# def tambah(a, b):
+#     return a * b
+
+# karyawan = [
+#     {"nama": "Andi", "skor": 75},
+#     {"nama": "Budi", "skor": 90},
+#     {"nama": "Citra", "skor": 85},
+#     {"nama": "Dedi", "skor": 60},
+#     {"nama": "Eka", "skor": 95},
+# ]
+
+# # Menyaring karyawan yang skornya >= 80
+# karyawan_berprestasi = list(
+#     filter(lambda k: k['skor'] >= 80, karyawan)
+# )
+
+# # Menampilkan hasil
+# for k in karyawan_berprestasi:
+#     print(f"Nama: {k['nama']}, Skor: {k['skor']}")
+
+
+# pelanggan = [
+#     {"nama": "Siti", "status_vip": True, "belanja": 150000},
+#     {"nama": "Joko", "status_vip": False, "belanja": 350000},
+#     {"nama": "Rian", "status_vip": True, "belanja": 500000},
+#     {"nama": "Dewi", "status_vip": False, "belanja": 80000},
+#     {"nama": "Maya", "status_vip": True, "belanja": 200000},
+#]
+
+# status = list(
+#     filter(lambda k: k['status_vip'] == True and k['belanja'] >= 200000, pelanggan)
+# )
+
+# for k in status:
+#     print(f'nama: {k['nama']} status: {k['status_vip']}')
+
+#dictionary
+
+
+
+# biodata = [
+#     {"nama":"afdal", "umur":12},
+#     {'nama':'aya', 'umur':13}
+# ]
+
+# status = list(
+#     filter(lambda x: x['umur'] >12, biodata)
+# )
+# for x in status:
+#     print(f"nama: {x['nama']} status: {x['umur']}")
+
+
+
+# def hitung_harga_diskon(harga, persen):
+#     potongan = harga * (persen/100)
+#     setelah = harga - potongan
+#     return setelah
+
+# def cetak_harga(nama_barang, harga_akhir):
+#     print(f'nama barang: {nama_barang}, harga akhir {harga_akhir}')
+
+    
+
+# harga_akhir = hitung_harga_diskon(200000, 25)
+# cetak_harga('sepatu', harga_akhir)
+
+# def halo(sapaan = 'oiii'):
+#     print(sapaan)
+
+# halo('nama kamu siapa')    
+# def buat_profil(nama,umur,kota):
+#     print(f'nama: {nama}, umur: {umur}, kota: {kota}')
+
+# buat_profil(nama = 'afdal', kota = 'makassar', umur = 12)
+
+# def hitung_bmi(berat, tinggi):
+#     BMI = berat/ (tinggi**2)
+#     return round(BMI,2)
+
+# print(hitung_bmi(60,1.65))
+
+# def belanja(*harga):
+#     total = sum(harga)
+#     return total
+
+# print(belanja(25000, 7500))
+# print(belanja(10000))
+
+
+
+
+
+
+
+
+# try:
+#     angka1 = int(input('masukkan angka: '))
+#     angka2 = int(input('masukkan angka: '))
+#     operasi = angka1 / angka2
+                    
+# except ZeroDivisionError:
+#     print("Pembagian dengan angka nol tidak diperbolehkan dalam operasi matematika.!")
+# except ValueError:
+#         print('input harus berupa angka')
+
+# def cek_umur(umur) -> float:
+#     if umur < 0:
+#         raise ValueError("umur tidak valid")
+#     else:
+#         print('umur valid')
+    
+    
+# cek_umur(20)
+# cek_umur(-5)
+
+
+# password = 12345
+# username = 'afdalginaya'
+# try:
+#     nama = input('masukkan nama: ')
+#     pas =   int(input('masukkan password: '))
+
+#     if nama == username and pas == password:
+#         print(f'login berhasil!!, selamat datang {nama}')
+#     else:
+#         print('salah keduanya atau salah satunya')
+# finally:
+#     print('sesi login selesai')
+
+# def hitung_subtotal(harga, jumlah, member=False):
+#     total = harga * jumlah
+#     if member:
+#         total = total * 0.9
+#     return int(total)
+
+# def barang():
+#     print('==== selamat datang di kasir ===\n')
+#     status_member = input('apakah anda member? (y/n): ').strip().lower()
+#     member2 = True if status_member == 'y' else False
+
+#     daftar_belanja = []
+#     total_belanja = 0
+
+#     while True:
+#         nama_barang = input('masukkan nama barang: ')
+#         if nama_barang == '':
+#             break
+
+#         harga = int(input('masukkan harga barang: '))
+#         jumlah = int(input('masukkan jumlah barang: '))
+
+#         subtotal = hitung_subtotal(harga, jumlah, member=member2)
+#         total_belanja += subtotal
+
+
+#manipulation string
+
+# nama = 'afdal'
+# huruf = nama[1] #mengakses karakter pada string
+
+# print(f'huruf keduanya adalah {huruf}')
+
+# nama = 'ghifar'
+# panjang = len(nama) #menentukan panjang dari sebuah kata berdaasarkan banyak kata
+
+# print(f'panjang katanya adalah {panjang}')
+
+# nama = 'afdal ginaya'
+# karakter = 'y'
+
+# position = nama.find(karakter) #menemukan sebuah karkater pada string
+
+# print(position)
+
+# nama = 'afdal ginaya'
+# karakter = 'a'
+
+# jumlah = nama.count(karakter)
+# print(jumlah)
+
+# nama = 'afdal ginaya zulham'
+# karakter = 'a'
+# cari = nama.find(karakter)
+# print(cari)
+
+# hitung  = nama.count('a')
+# print(hitung)
+
+# tukar = nama.replace('ginaya zulham', 'ganteng')
+# print(tukar) 
+
+# def alat(nama):
+#     hitung = len(nama)
+#     cari = nama.find('a')
+#     tukar = nama.replace(nama, 'ganteng')
+
+
+#     return f'total katanya {hitung} dan huruf (a) ditemukan pada {cari} dan beliau {tukar}'
+    
+
+# print(alat('ghifara'))
+
+# word = 'afdal ginaya'
+# kabar = word.upper()
+# print(kabar)
+
