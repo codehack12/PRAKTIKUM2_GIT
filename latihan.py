@@ -1298,21 +1298,301 @@
 # cari = namaBarang.find('RP')
 # print(f'harga (RP) mulai terdeteksi di indeks ke-{cari}')
 
-while True:
+# while True:
 
-    password = input('masukkan pass: ')
-    spass = password.count(" ")
+#     password = input('masukkan pass: ')
+#     spass = password.count(" ")
 
-    if len(password) == 8 and spass == 0:
-        print('password valid dan berhasil')
-    if spass > 0:
-        print('pass tidak valid karena tidak boleh ada spasi')
-    if len(password) < 8 or len(password) > 8:
-        print('pass tidak valid karena tidak pas delapan karakter')
-
-
+#     if len(password) == 8 and spass == 0:
+#         print('password valid dan berhasil')
+#     if spass > 0:
+#         print('pass tidak valid karena tidak boleh ada spasi')
+#     if len(password) < 8 or len(password) > 8:
+#         print('pass tidak valid karena tidak pas delapan karakter')
 
 
 
+# nama = 'afdal ginaya'
+# ganti = nama.replace('ginaya', 'ganteng')
+# print(ganti)
 
+# nama = str(input('masukkan kata: '))
+# baru = nama.upper()
+# print(baru)
+
+
+# while True:
+#     email = input('masukkan akun: ')
+#     cari = email.count('.unhas.ac.id')
+
+#     if cari > 0:
+#         print('akses diterima')
+#         break
+#     elif cari == 0:
+#         print('akses ditolak!! gunakan email resmi')
+#         continue
+
+
+# nama = input('masukkan nama cabang: ')
+# toko = 'toko ' + nama
+# baris = len(toko) * '-'
+
+# print(baris)
+# print(toko)
+# print(baris)
+    
+
+# ALFABET = "abcdefghijklmnopqrstuvwxyz"
+
+
+# def bersihkan_teks(teks):
+#     hasil = ""
+#     for ch in teks:
+#         if ch.lower() in ALFABET:      # cek manual ke string alfabet
+#             hasil = hasil + ch.lower()
+#     return hasil    
+
+
+# nama = input('masukkan nama: ')
+# balik = " ".join(reversed(nama))
+
+# print(balik)
+# total = 0
+# while True:
+#     menu = int(input('masukkan kode menu (ketik selesai untuk berhenti): '))
+#     if menu == 1:
+#         nama = 'nasi goreng'
+#         harga = 15000
+#     elif menu == 2:
+#         nama = 'mie ayam'
+#         harga = 12000
+#     elif menu == 3:
+#         nama = 'es teh'
+#         harga = 5000
+#     else:
+#         print('menu tidak tersedia')
+#         continue
+
+#     if menu == 'selesai':
+#             break
+#     try:
+#         jumlah = int(input('masukkan jumlah: '))
+
+#     except ValueError:
+#         print('input harus berupa angka!!')
+#         continue
+
+#     total += jumlah
+#     akumulasi = total * harga
+#     if akumulasi >= 50000:
+#         akhir = akumulasi * 0.9
+#         print('dapat diskon')
+#     elif akumulasi >= 30000:
+#         akhir = akumulasi * 0.95
+#         print('dapat diskon')
+#     else:
+#         print('tanpa diskon')
+
+
+# nama = "afdaal"
+# umur = 19
+
+# print(f'nama: {nama}')
+# print(f'umur: {umur}')
+
+
+# nama = input('mauskkan nama anda: ')
+# umur = int(input('masukkan umur: '))
+
+# if 5 > umur > 2:
+#     print('anjing')
+# else:
+#     print('baik')
+
+# panjang = int(input('masukkan panjang: '))
+# lebar = int(input('masukkan lebar: '))
+
+# print(f'luas persegi panjang: {lebar * panjang}') #luas 
+
+# totaldetik = int(input('masukkan total detik: '))
+
+# jam  = totaldetik // 3600
+# sisa = totaldetik % 3600
+# menit = sisa // 60
+# detik = sisa % 60
+
+# print(f'{jam} jam, {menit} menit, {detik} detik')
+
+# nama = input('masukkan nama: ')
+# ipk = int(input('masukkan IPK: '))
+# penghasilan = int(input('masukkan penghasilan orang tua per bulan: '))
+
+# #program penyaringan
+# if ipk >= 3.5 and penghasilan < 5000000:
+#     print('layak')
+# elif ipk >= 3.9 and penghasilan > 0:
+#     print(f'nama: {nama}, layak')
+
+# nilai = [20, 30, 40, 50, 60]
+# terendah = nilai[0]
+# tertinggi = nilai[0]
+# for i in nilai:
+#     if i > tertinggi:
+#         tertinggi = i
+#     if i < terendah:
+#         tertinggi = i
+
+
+# print(tertinggi, terendah)
+
+# nilai = list(map(int, input('masukkan nilai: ').split()))
+
+# print('terendah: ', max(nilai))
+# print('tertinggi: ', min(nilai))
+
+
+# identitas = {
+#     'afdal': ('082190607734', "afdalginaya@gmail.com"),
+#     'fatur': ("081263535366", 'fatrue@gmail.com')
+# }
+
+# nama = input('cari nama: ')
+# if nama in identitas:
+#     hp, email = identitas[nama]
+#     print("hp: ", hp)
+#     print('email: ', email)
+
+
+
+# def hitung_total(harga_string, jumlah):
+#     ubah = int(harga_string)
+#     hasil = ubah * jumlah
+
+#     return hasil
+
+# print(hitung_total('12000', 12))
+# nama = [ "AFDAL GINAYA", "FATUR"]
+
+# nama.append('alia')
+
+# print(nama)
+
+
+# identitas = {
+#     "afdal ginaya": ("081223747493", "afdalginaya")
+# }
+
+# nama = input('masukkan nama: ')
+
+# if nama in identitas:
+#     nomor, panjang = identitas[nama]
+#     print(f'nomor: ', nomor)
+#     print(f'panjang: ', panjang)
+
+# def tambah_aman(x, y):
+#     try:
+#         z = x+y
+#     except:
+#         z = str(x) + y
+
+#     return z
+
+# print(tambah_aman(5, "lima"))
+
+# roti = ( "roti bakar", 12000)
+# kopi = ("kopi", 13000)
+
+# pesananPelanggan = []
+
+# pesananPelanggan.append(roti)
+# pesananPelanggan.append(kopi)
+
+# strukpelangan = {
+#     "nama pelanggam: ", {}
+# }
+
+
+# nama = []
+# nama.append('afdal')
+# print(nama)
+
+# nama = input('masukkan nama: ')
+# if "afdal" in nama:
+#     print('pintar')
+# else:
+#     print('cerdas')
+
+# def hitung(nilai1, nilai2, nilai3):
+#     total = nilai1 + nilai2 + nilai3
+#     banyak = 3
+#     rata = total/banyak
+#     return rata
+
+# # print(hitung(1,2,3))
+# def cek_izin(umur):
+#     if umur >= 18:
+#         return 'diizinkan'
+#     else:
+#         return 'tidak diizinkan'
+
+# print(cek_izin(15))
+
+# total = 0
+# jumlah_barang = 5
+
+# for i in range(1, jumlah_barang):
+#     harga = int(input(f'masukkan harga barang ke-{i}: '))
+#     total += harga
+
+#     if total >= 50000:
+#         diskon = total * 0.1
+#     else:
+#         diskon = 0
+
+# rerata = total / jumlah_barang
+# total_bayar = total - diskon
+
+# print(f'total belanja: {total_bayar}')
+# print(f'rata-rata: {rerata}')
+
+# nama = ['afdal ginaya', 'semester 1', 'aya']
+
+# print(nama[:2])
+# print(nama[1:])
+# #slicing pada list
+# #[index awal:index akhir:step]
+
+# angka = [0,1,2,3,4,5,6,7,8,9]
+
+# print(angka[1:8:2])
+
+
+# nilai = [20,40,60,80,20,50]
+# #nilai = [0,1,2,3,4,5]
+# # print(max(nilai))
+# # print(min(nilai))
+
+# # print(nilai[2:5:2])
+
+# nilai.append(30)
+# print(nilai)
+# nilai.insert(3,40)
+# print(nilai)
+
+# nama = input('masukkan nama: ')
+# balik = nama[::-1]
+# print(balik)
+
+# nama = ["afdal ginaya", "082190607734"]
+
+# nama[0] = "fitrah"
+# #print(nama)
+# print(nama[0])
+# print(nama[0:])
+# nama.insert(3, "afdalginaya")
+# print(nama)
+
+# a = {1,2,5}
+# b = {3,4,1}
+# print(a ^ b)
 
