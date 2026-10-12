@@ -1596,3 +1596,114 @@
 # b = {3,4,1}
 # print(a ^ b)
 
+# buah = ["apel", "mangga", "pisang"]
+# buah.append('jeruk')
+# print(buah)
+
+# angka = [10, 12, 12]
+# angka.insert(1, 30)
+# angka.sort()
+# print(angka)
+
+#slicing: teknik mengambil beberapa elemen
+
+# angka = [10, 20, 30 , 60]
+# print(angka[:2])
+# print(angka[::2])
+
+# angka = [70, 80, 90, 75, 85,]
+
+# angka.append(95)
+# angka.insert(2,88)
+# angka.pop(0)
+
+# print(f'hasil slicing: {angka[1:5:2]}')
+# print(f'hasil akhir: {angka}')
+
+# angka = [1,2,3,4,5,]
+
+# hasil = [x ** 2 for x in angka if angka]
+
+
+# nilai = [60, 75,90,55,85,40,]
+# lulus = [i for i in nilai if i >= 75]
+# print(nilai)
+# print(f'banyaknya lulus: ', len(lulus))
+
+# # identitas = (1,True, "satu")
+# ubah = list(identitas)
+# print(ubah)
+
+# jadwal = (
+#     "lab dasar",
+#     "lab jaringan",
+#     "lab pemrograman"
+# )
+
+# print(type(jadwal)) #data belum diubah ke list
+# ubah = list(jadwal) #mengubah ke dalam bentuk list supaya datanya bisa diubah
+# print(ubah)
+# print(type(ubah))#setelah diubah
+# ubah[1] = 'lab multimedia'
+
+# print(f'lab terakhir: {ubah[2]}')
+# print(f'jadwal ruang baru: {ubah}')
+
+
+#================================================
+#                       SET
+#================================================
+
+# set  = {1, 2, 2,3,3,4,4}
+# print(set)
+# set.add(5)
+# print(set)
+
+# a = {1,2,3}
+# b = {3,4,5}
+
+# print(a | b) #tidak menge-print yang double ( | )
+
+
+# a = {1,2,3}
+# b = {3,4,5}
+# print(a & b)
+# print(a-b)
+
+# a = {101,102,103,104}
+# b = {103,104,105,106}
+
+# print(f'semua peserta: {a | b}')
+# print(f'kedua kelas: {a&b}')
+# print(f'khusus kelas A: {a-b}')
+
+#==============================================
+#           DICTIONARYYY
+#==============================================
+
+#khas dengan key dan value
+
+# mahasiswa = {
+#     "nama": "afdal ginaya zulham",
+#     "nilai": {"mtk": 90, "bing": 70
+#     }
+# }
+#print(mahasiswa["nama"])
+#print(mahasiswa["nilai"])
+#print(type(mahasiswa["nilai"]))
+
+# mahasiswa["nilai"]["bing"] = 80
+# print(mahasiswa["nilai"]["bing"])
+
+identitas = {
+    "nama": "Afdalginaya", "matkul": {
+        "matematika": 80,
+        "bing": 90
+    }
+}
+
+identitas["matkul"]["matematika"] = 90 #mengubah nilai yang sudah ada di dalam value
+identitas["matkul"]["fisika"] = 90 #menambahkan nilai ke dalam matkul
+identitas["matkul"]["geo"] = 10
+identitas["nama"] = "afdal"
+print(identitas)
